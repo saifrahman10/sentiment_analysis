@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+form {
+		margin: 0 0 0 0;
+	}
+
+	input[type="submit"],
+	select,
+	textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		border-radius: 50px;
+		border: solid 1px;
+		border-color:rgb(0,0,0,0.1);
+		display: block;
+		margin: 0 0 0 30px;
+		padding: 1px;
+		outline: 0;
+		height: 3em;
+		width: 80%;
+		font-family: 'Oswald', sans-serif;
+		font-size: 2em;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover,
+		.button:hover {
+			background-color: rgba(255, 255, 255, 0.075);
+		}
+
+	input[type="text"],
+	select,
+	textarea {
+	    color: rgb(255,255,255);
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background-color: rgba(0, 0, 0,.8);
+		border-radius: 50px;
+		border: solid 1px;
+		margin: auto;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: None;
+		width: 80%;
+	}
+
+
+	input[type="text"],
+	select {
+		height: 1.65em;
+	}
+
+	textarea {
+		padding: 0.75em 1em;
+	}
+
+	::-webkit-input-placeholder {
+		opacity: 1.0;
+	}
+
+	:-moz-placeholder {
+		opacity: 1.0;
+	}
+
+	::-moz-placeholder {
+		opacity: 1.0;
+	}
+
+	:-ms-input-placeholder {
+		opacity: 1.0;
+	}
+
+		input[type="text"]:focus,
+		select:focus,
+		textarea:focus {
+			border-color: #8cc9f0;
+			color: rgb(255,255,255);
+			box-shadow: 0 0 0 1px #8cc9f0;
+		}
+
+	::-webkit-input-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+
+	:-moz-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+
+	::-moz-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+
+	:-ms-input-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+
+	.formerize-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}

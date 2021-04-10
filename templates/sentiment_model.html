@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>S. Rahman</title>
+    <link href="../static/assets/css/formatting-styles.css" rel="stylesheet">
+    <link href="../static/assets/css/theme.css" rel="stylesheet">
+    <link href="../static/assets/css/form.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <a href="http://saif-portfolio.s3-website.us-east-2.amazonaws.com/">
+    <button class="menu__btn">
+        <span class="menu__label">HOME</span>
+    </button>
+    </a>
+
+    <section class="content">
+        <h1>Sentiment Prediction</h1>
+        <div>
+            <p>
+                Test out my sentiment prediction model, which uses supervised machine learning to predict whether
+                your text is negative or positive. The model uses Bernoulli Naive Bayes classification, trained on
+                1.6 million tweets.
+            </p>
+            <form action="{{ url_for('predict') }}" method = 'POST' style="display: inline-blocker">
+                <div style="width: 100%; display: table;">
+                    <div style="display: table-row; height: 80px;">
+                        <div style="display: table-cell;">
+                            <input type="text" name="size" placeholder="Type something..."/>
+                        </div>
+                        <div style="display: table-cell;">
+                            <input type="submit" value="PREDICT" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p>
+                {{prediction}}
+            </p>
+            <a href="https://github.com/saifrahman10/sentiment_analysis"><p style="text-decoration:underline;">
+                Link to Github repo
+            </p></a>
+        </div>
+    </section>
+</div>
+</div>
+</div>
+</body>
+</html>
